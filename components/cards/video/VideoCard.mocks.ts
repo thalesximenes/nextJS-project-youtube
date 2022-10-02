@@ -1,11 +1,9 @@
 import { IVideoCard } from './VideoCard';
 
 const base: IVideoCard = {
-  tag: 'Felines',
-  title: `What's new in Cats`,
-  body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!',
-  author: 'Alex',
-  time: '2h ago',
+  chanel: 'Viniccius13',
+  time: '135K Views • 1 week ago',
+  description: 'Em busca da Casa automática #180 ',
 };
 
 export const mockVideoCardProps = {

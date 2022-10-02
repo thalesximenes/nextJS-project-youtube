@@ -1,55 +1,39 @@
 import Image from 'next/image';
+import VideoThumb from '../video-thumbs/VideoThumb';
+import { mockVideoThumbProps } from '../video-thumbs/VideoThumb.mocks';
 import styles from './VideoCard.module.css';
 
 export interface IVideoCard {
-  tag: string;
-  title: string;
-  body: string;
-  author: string;
+  chanel: string;
   time: string;
+  description: string;
 }
 
-const VideoCard: React.FC<IVideoCard> = ({
-  tag,
-  title,
-  body,
-  author,
-  time,
-}) => {
+const VideoCard: React.FC<IVideoCard> = ({ description, time, chanel }) => {
   return (
-    <div className={styles.container}>
-      <div className={styles.card}>
-        <div className={styles.card__header}>
+    <a className={styles.container}>
+      <div className={styles.thumb}>
+        <VideoThumb {...mockVideoThumbProps.base} />
+      </div>
+      <div className={styles.thumbnail}>
+        <div className={styles.avatar}>
           <Image
-            src="/time-cat.jpg"
-            alt="card__image"
-            className={styles.card__image}
-            width="600"
-            height="400"
+            src="https://i.pravatar.cc/40?img=3"
+            alt="user__image"
+            className={styles.user__image}
           />
         </div>
-        <div className={styles.card__body}>
-          <span className={`${styles.tag} ${styles['tag-blue']}`}>{tag}</span>
-          <h4>{title}</h4>
-          <p>{body}</p>
-        </div>
-        <div className={styles.card__footer}>
-          <div className={styles.user}>
-            <Image
-              src="https://i.pravatar.cc/40?img=3"
-              alt="user__image"
-              className={styles.user__image}
-              width="40"
-              height="40"
-            />
-            <div className={styles.user__info}>
-              <h5>{author}</h5>
-              <small>{time}</small>
-            </div>
+        <div className={styles.description}>
+          <div className={styles.title}>
+            <p>{description}</p>
+          </div>
+          <div className={styles.info}>
+            <p>{chanel}</p>
+            <p>{time}</p>
           </div>
         </div>
       </div>
-    </div>
+    </a>
   );
 };
 
