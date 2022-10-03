@@ -21,6 +21,8 @@ const VideoCard: React.FC<IVideoCard> = ({ description, time, chanel }) => {
             src="https://i.pravatar.cc/40?img=3"
             alt="user__image"
             className={styles.user__image}
+            width="32px"
+            height="32px"
           />
         </div>
         <div className={styles.description}>

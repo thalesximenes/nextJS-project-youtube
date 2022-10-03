@@ -1,0 +1,32 @@
+.container {
+  border-bottom: 1px;
+  width: 224px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  width: 224px;
+  height: 40px;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.menu:hover {
+  background-color: #909090;
+}
+
+.menu img {
+  border-radius: 50%;
+  height: calc(3 * 0.75rem);
+  width: calc(3 * 0.75rem);
+}
+
+.menu p {
+  margin-left: 24px;
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: #ffffff;
+}
