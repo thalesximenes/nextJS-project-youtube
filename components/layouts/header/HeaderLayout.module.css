@@ -1,0 +1,15 @@
+.container {
+  background-color: #212121;
+}
+
+.menu__icon {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu__icon button {
+  border: none;
+  background: none;
+  padding: 0 10px 0 2px;
+  cursor: pointer;
+}

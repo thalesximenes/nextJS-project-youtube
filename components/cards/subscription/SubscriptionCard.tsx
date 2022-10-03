@@ -14,8 +14,8 @@ const SubscriptionCard: React.FC<ISubscriptionCard> = ({ name, img }) => {
           src={'https://i.pravatar.cc/40?img=' + img}
           alt="user__image"
           className={styles.user__image}
-          width="32px"
-          height="32px"
+          width="24px"
+          height="24px"
         />
         <p>{name}</p>
       </a>

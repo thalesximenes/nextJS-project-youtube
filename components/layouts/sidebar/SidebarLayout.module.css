@@ -17,6 +17,7 @@
   border-bottom: 1px solid;
   border-color: #ffffff1a;
   padding: 8px 0;
+  cursor: pointer;
 }
 
 .menu__top p {
@@ -32,12 +33,14 @@
   margin-left: 24px;
   display: flex;
   flex-direction: row;
+  cursor: pointer;
 }
 
 .menu__header button {
   border: none;
   background: none;
-  padding: 0;
+  padding: 0 10px 0 2px;
+  cursor: pointer;
 }
 
 .menu:hover {
